@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Campus Management System – GAT</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<nav>
+  <div class="logo-wrap">
+    <div class="logo-badge">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="12" fill="none" stroke="#FFD600" stroke-width="2"/>
+        <ellipse cx="16" cy="16" rx="6" ry="12" fill="none" stroke="#FFD600" stroke-width="1.5"/>
+        <line x1="4" y1="16" x2="28" y2="16" stroke="#FFD600" stroke-width="1.5"/>
+        <line x1="8" y1="10" x2="24" y2="10" stroke="#FFD600" stroke-width="1"/>
+        <line x1="8" y1="22" x2="24" y2="22" stroke="#FFD600" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="logo-text">GLOBAL ACADEMY<br>OF TECHNOLOGY<br><small style="font-weight:400;font-size:10px">growing ahead of time</small><br><small style="font-weight:400;font-size:9px">Autonomous Institute, Affiliated to VTU</small></div>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+    <li><a href="#" onclick="showPage('about')" id="nav-about">About us</a></li>
+    <li><a href="#" onclick="showPage('modules')" id="nav-modules">Modules</a></li>
+    <li><a href="#" onclick="showPage('faculty')" id="nav-faculty">Faculty</a></li>
+    <li><a href="#" onclick="showPage('calendar')" id="nav-calendar">Calendar</a></li>
+    <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact U</a></li>
+  </ul>
+  <span class="hamburger">☰</span>
+</nav>
+
+<!-- ══════════════════ HOME PAGE ══════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1><span>Smart</span> Campus Management System</h1>
+    </div>
+    <div class="hero-cet-bar">
+     
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div style="padding: 40px 0 0;">
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-num">25<sup>+</sup></div><div class="stat-label">Years of<br>Glorious History</div></div>
+      <div class="stat-item"><div class="stat-num">27<sup>+</sup></div><div class="stat-label">Departments &<br>Programs</div></div>
+      <div class="stat-item"><div class="stat-num">500<sup>+</sup></div><div class="stat-label">Start ups</div></div>
+      <div class="stat-item"><div class="stat-num">100<sup>+</sup></div><div class="stat-label">Industry<br>Partners</div></div>
+    </div>
+  </div>
+
+  <!-- Intro text -->
+  <div class="section section-center">
+    <p style="font-size:15px;color:var(--muted);max-width:700px;margin:0 auto;line-height:1.8;">
+      At the Global Academy of Technology (GAT), our Smart Campus Management System is designed to equip students, faculty, and administration with cutting-edge digital tools for seamless campus operations. Be part of the next 25 years.
+    </p>
+  </div>
+
+  <!-- Find Your Module -->
+  <div class="section" style="padding-top:0">
+    <h2 class="section-title">Find Your Module:</h2>
+    <div class="btn-grid" style="margin-top:20px">
+      <a href="#" class="btn-card" onclick="showPage('attendance');return false;"><span class="icon">📋</span> Attendance Portal</a>
+      <a href="#" class="btn-card" onclick="showPage('access-login');return false;"><span class="icon">🔐</span> Access Control System</a>
+      <a href="#" class="btn-card" onclick="showPage('library');return false;"><span class="icon">📚</span> Library Management</a>
+      <a href="#" class="btn-card" onclick="showPage('canteen');return false;"><span class="icon">🍽️</span> Canteen Pre-Order</a>
+      <a href="#" class="btn-card" onclick="showPage('ai-assistant');return false;"><span class="icon">🤖</span> AI Study Assistant</a>
+      <a href="#" class="btn-card" onclick="showPage('digital-id');return false;"><span class="icon">🪪</span> Digital ID Card</a>
+    </div>
+  </div>
+
+  <!-- System Structure -->
+  <div class="section" style="background:var(--gray);padding-top:48px;padding-bottom:48px;">
+    <h2 class="section-title">System Structure</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feat-icon">🖥️</div>
+        <h3>Unified Dashboard</h3>
+        <p>A single command centre for students and administrators to access all campus services in real time.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">☁️</div>
+        <h3>Cloud-Based Platform</h3>
+        <p>Accessible from anywhere, anytime — scalable infrastructure built on modern cloud architecture.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">🔒</div>
+        <h3>Secure & Private</h3>
+        <p>End-to-end encryption, role-based access control, and VTU-compliant data governance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Choose -->
+  <div class="why-section">
+    <h2 style="font-size:34px;font-weight:900;margin-bottom:8px">Why Choose Smart Campus?</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <h4>⚡ Industry-Aligned Technology:</h4>
+        <p>Designed for the world of AI, automation, and digital transformation — mirroring enterprise-grade platforms.</p>
+      </div>
+      <div class="why-item">
+        <h4>🌱 Sustainability Focus:</h4>
+        <p>Reducing paper usage and carbon footprint by digitising attendance, records, and canteen orders.</p>
+      </div>
+      <div class="why-item">
+        <h4>🎯 Student-Centric Design:</h4>
+        <p>Every module is built around student needs — from AI tutors to real-time gate access logs.</p>
+      </div>
+      <div class="why-item">
+        <h4>🔬 Research-Driven Features:</h4>
+        <p>Encouraging data-backed decisions by giving faculty rich analytics and reporting tools.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Principal Quote -->
+  <div class="quote-section">
+    <div class="quote-text">
+      <blockquote>"At GAT, we foster innovation, ensure quality education, and nurture holistic growth. Our Smart Campus initiative continuously evolves, striving for excellence with compassion."</blockquote>
+      <div class="attr">Dr. Balakrishna H. B.<br><span style="font-weight:400">Principal, Global Academy of Technology</span></div>
+    </div>
+    <img src= "SIR BALAKRISHNA.jpeg"alt="SIR BALAKRISHNA">
+  </div>
+
+</div><!-- /home -->
+
+<!-- ══════════════════ ABOUT PAGE ══════════════════ -->
+<div class="page" id="page-about">
+
+  <div class="hero" style="height:300px;">
+    <div class="hero-text">
+      <h1>A Vision for the<br>Next <span>Quarter Century</span></h1>
+    </div>
+    <div class="hero-cet-bar">Smart Campus Management System — Global Academy of Technology</div>
+  </div>
+
+  <div class="section">
+    <h2 style="font-size:28px;font-weight:700;margin-bottom:12px">Your Vision</h2>
+    <p style="font-size:15px;color:var(--muted);line-height:1.8;max-width:600px">
+      Become a premier institution imparting quality education in technology and management to meet the changing needs of people, planet, and industry — empowered by a fully digital smart campus.
+    </p>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <h2 class="section-title">What We Offer:</h2>
+    <div class="btn-grid" style="margin-top:20px">
+      <a href="#" class="btn-card"><span class="icon">🏛️</span> Smart Attendance Portal</a>
+      <a href="#" class="btn-card"><span class="icon">🔑</span> Access Control & Security</a>
+      <a href="#" class="btn-card"><span class="icon">📖</span> Digital Library System</a>
+      <a href="#" class="btn-card"><span class="icon">🧠</span> AI Academic Assistant</a>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--gray);padding-top:48px;padding-bottom:48px;">
+    <h2 class="section-title">System Architecture</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feat-icon">⏱️</div>
+        <h3>Duration & Scope</h3>
+        <p>Deployed across all 4 years (8 semesters) of the undergraduate program at GAT.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">🤝</div>
+        <h3>Integration Approach</h3>
+        <p>A unified platform with API-first design connecting all modules — attendance, library, canteen, and more.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">📊</div>
+        <h3>Industry Exposure</h3>
+        <p>Regular feature updates driven by industry mentors, seminars, and corporate partnerships.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title" style="color:var(--yellow)">Eligibility & Access</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h4>Students</h4>
+        <p>All enrolled students at GAT with a valid Student ID can access the Smart Campus portal using their VTU credentials or college-issued login.</p>
+      </div>
+      <div class="info-card">
+        <h4>Faculty & Staff</h4>
+        <p>Faculty members get elevated access for attendance marking, library approvals, and real-time dashboard analytics for their respective departments.</p>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /about -->
+
+<!-- ══════════════════ MODULES PAGE ══════════════════ -->
+<div class="page" id="page-modules">
+
+  <div class="faculty-hero" style="padding: 28px 56px;">
+    <h2>SMART CAMPUS [MODULES]</h2>
+  </div>
+
+  <div class="section">
+    <div class="modules-grid">
+
+      <div class="module-card" onclick="showPage('attendance')">
+        <div class="m-icon">📋</div>
+        <h3>Attendance Portal</h3>
+        <p>Biometric & QR-code based attendance system with real-time tracking, automated alerts for low attendance, and parent notifications.</p>
+        <span class="status live">● Live</span>
+      </div>
+
+      <div class="module-card" onclick="showPage('access-login')">
+        <div class="m-icon">🔐</div>
+        <h3>Access Control System</h3>
+        <p>RFID and face-recognition gates for all entry/exit points. Live gate logs visible to security and administrators 24/7.</p>
+        <span class="status live">● Live</span>
+      </div>
+
+      <div class="module-card" onclick="showPage('library')">
+        <div class="m-icon">📚</div>
+        <h3>Library Management</h3>
+        <p>Online book search, reservation, issue & return tracking. E-book integration and overdue fine auto-calculation.</p>
+        <span class="status live">● Live</span>
+      </div>
+
+      <div class="module-card" onclick="showPage('canteen')">
+        <div class="m-icon">🍽️</div>
+        <h3>Canteen Pre-Order</h3>
+        <p>Pre-order meals from the campus canteen, track order status in real time, and pay digitally — zero queue, zero waste.</p>
+        <span class="status beta">◐ Beta</span>
+      </div>
+
+      <div class="module-card" onclick="showPage('ai-assistant')">
+        <div class="m-icon">🤖</div>
+        <h3>AI Study Assistant</h3>
+        <p>Claude-powered AI tutor for doubt clearing, syllabus revision, past paper practice, and personalised study plans.</p>
+        <span class="status beta">◐ Beta</span>
+      </div>
+
+      <div class="module-card" onclick="showPage('digital-id')">
+        <div class="m-icon">🪪</div>
+        <h3>Digital ID Card</h3>
+        <p>Virtual student & faculty ID cards with scannable QR code, valid for all campus facilities and off-campus activities.</p>
+        <span class="status live">● Live</span>
+      </div>
+
+      <div class="module-card">
+        <div class="m-icon">📈</div>
+        <h3>Admin Analytics Dashboard</h3>
+        <p>Real-time KPIs: daily attendance heat-maps, gate access logs, library utilisation, and canteen demand forecasts.</p>
+        <span class="status live">● Live</span>
+      </div>
+
+      <div class="module-card">
+        <div class="m-icon">📬</div>
+        <h3>Notification Centre</h3>
+        <p>Push/email/SMS alerts for attendance shortfall, overdue books, canteen order ready, and campus announcements.</p>
+        <span class="status live">● Live</span>
+      </div>
+
+      <div class="module-card">
+        <div class="m-icon">🗺️</div>
+        <h3>Campus Map & Navigation</h3>
+        <p>Interactive indoor map of all buildings, labs, and facilities. Real-time crowd density and room availability display.</p>
+        <span class="status beta">◐ Beta</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--gray);padding-top:40px;padding-bottom:40px;">
+    <h2 class="section-title">Module Architecture</h2>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feat-icon">🔄</div><h3>Real-Time Sync</h3><p>All modules communicate via WebSocket connections for instant data updates across the platform.</p></div>
+      <div class="feature-card"><div class="feat-icon">📱</div><h3>Mobile-First</h3><p>Progressive Web App works on any device — no app store download required.</p></div>
+      <div class="feature-card"><div class="feat-icon">🔧</div><h3>API-Driven</h3><p>RESTful APIs allow third-party integrations and future module additions without downtime.</p></div>
+    </div>
+  </div>
+
+</div><!-- /modules -->
+
+<!-- ══════════════════ FACULTY PAGE ══════════════════ -->
+<div class="page" id="page-faculty">
+
+  <div class="faculty-hero">
+    <h2>CSE[AI-ML]</h2>
+  </div>
+
+  <div class="faculty-grid">
+    <div class="faculty-card">
+     <img src="chandra.png" alt="Dr. Chandramma R" class="faculty-photo">
+      <div class="faculty-info">
+        <div class="name">Dr. Chandramma R</div>
+        <div class="role">Head of Department – Computer Science</div>
+      </div>
+    </div>
+    <div class="faculty-card">
+      <img src="Dr. Shruti B.V.jpeg" alt="Dr. Shruti B.V" class="faculty-photo">
+      <div class="faculty-info">
+        <div class="name">Dr. Shruti B.V</div>
+        <div class="role">Associate Professor</div>
+      </div>
+    </div>
+    <div class="faculty-card">
+      <img src="Dr. Lokanna Kadakolmath.jpeg" alt="Dr. Lokanna Kadakolmath" class="faculty-photo">
+      <div class="faculty-info">
+        <div class="name">Dr. Lokanna Kadakolmath</div>
+        <div class="role">Associate Professor</div>
+      </div>
+    </div>
+    <div class="faculty-card">
+      <img src="Dr. Shruthishree S.H.jpeg" alt="Dr. Shruthishree S.H" class="faculty-photo">
+      <div class="faculty-info">
+        <div class="name">Dr. Shruthishree S.H</div>
+        <div class="role">Associate Professor</div>
+      </div>
+    </div>
+    <div class="faculty-card">
+      <img src="Saranya Babu.jpeg" alt="Saranya Babu" class="faculty-photo">
+      <div class="faculty-info">
+        <div class="name">Saranya Babu</div>
+        <div class="role">Assistant Professor</div>
+      </div>
+    </div>
+    <div class="faculty-card">
+      <img src="Kavyashree B S.jpeg" alt="Kavyashree B S" class="faculty-photo">
+      <div class="faculty-info">
+        <div class="name">Kavyashree B S</div>
+        <div class="role">Assistant Professor</div>
+      </div>
+    </div>
+    <div class="faculty-card">
+      <img src="Sharadadevi Kaganurmath.jpeg" alt="Sharadadevi Kaganurmath" class="faculty-photo">
+      <div class="faculty-info">
+        <div class="name">Sharadadevi Kaganurmath</div>
+        <div class="role">Assistant Professor</div>
+      </div>
+    </div>
+    <div class="faculty-card">
+      <img src="Nasrath B K.jpeg" alt="Nasrath B K" class="faculty-photo">
+      <div class="faculty-info">
+        <div class="name">Nasrath B K</div>
+        <div class="role">Assistant Professor</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="faculty-grid" style="padding-top:20px">
+    <div class="faculty-card">
+      <img src="Jayashri Badiger.jpeg" alt="Jayashri Badiger" class="faculty-photo">
+      <div class="faculty-info"><div class="name">Jayashri Badiger</div><div class="role">Assistant Professor</div></div>
+    </div>
+    <div class="faculty-card">
+      <img src="Prakruthi L.jpeg" alt="Prakruthi L" class="faculty-photo">
+      <div class="faculty-info"><div class="name">Prakruthi L</div><div class="role">Assistant Professor</div></div>
+    </div>
+    <div class="faculty-card">
+      <img src="Dinesh M.jpeg" alt="Dinesh M" class="faculty-photo">
+      <div class="faculty-info"><div class="name">Dinesh M</div><div class="role">Assistant Professor</div></div>
+    </div>
+    <div class="faculty-card">
+      <img src="Nishchal Narayan S.jpeg" alt="Nishchal Narayan S" class="faculty-photo">
+      <div class="faculty-info"><div class="name">Nishchal Narayan S</div><div class="role">Assistant Professor</div></div>
+    </div>
+  </div>
+
+</div><!-- /faculty -->
+
+<!-- ══════════════════ CALENDAR PAGE ══════════════════ -->
+<div class="page" id="page-calendar">
+
+  <div class="hero" style="height:280px;">
+    <div class="hero-text">
+      <h1>Academic <span>Calendar</span></h1>
+    </div>
+    <div class="hero-cet-bar">Smart Campus Management System — Global Academy of Technology</div>
+  </div>
+
+<div class="cal-section">
+  <h2>Academic Calendar 2025-26 (EVEN Sem)</h2>
+
+  <div class="cal-btn-list">
+
+    <!-- 2nd Sem -->
+    <button class="cal-btn"
+      onclick="openCalendar('Calender Of Eevents 2nd Semester.pdf')">
+      📄 Academic Calendar – 2nd Sem
+    </button>
+
+    <!-- 4th Sem -->
+    <button class="cal-btn"
+      onclick="openCalendar('4th& 6th Even CoE . 2025-2026.pdf')">
+      📄 Academic Calendar – 4th Sem
+    </button>
+
+    <!-- 6th Sem -->
+    <button class="cal-btn"
+      onclick="openCalendar('4th& 6th Even CoE . 2025-2026.pdf')">
+      📄 Academic Calendar – 6th Sem
+    </button>
+
+    <!-- 8th Sem -->
+    <button class="cal-btn"
+      onclick="openCalendar('Tentative Calendar of Events of 8th Sem - Even.pdf')">
+      📄 Academic Calendar – 8th Sem
+    </button>
+
+  </div>
+</div>
+
+  <div class="section" style="background:var(--gray);padding-top:40px;padding-bottom:40px;">
+    <h2 class="section-title">Smart Schedule Features</h2>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feat-icon">🔔</div><h3>Auto Reminders</h3><p>Receive push notifications 24 hours before exams, internal assessments, and submission deadlines.</p></div>
+      <div class="feature-card"><div class="feat-icon">📲</div><h3>Sync to Phone</h3><p>Export your semester calendar directly to Google Calendar or Apple Calendar with one click.</p></div>
+      <div class="feature-card"><div class="feat-icon">🗃️</div><h3>Past Calendars</h3><p>Access archived academic calendars for all previous semesters from the campus repository.</p></div>
+    </div>
+  </div>
+
+</div><!-- /calendar -->
+
+<!-- ══════════════════ CONTACT PAGE ══════════════════ -->
+<div class="page" id="page-contact">
+
+  <div class="contact-hero" style="background: linear-gradient(to right,#b8dde8,#cbe8f0);">
+    <div class="label">Contact</div>
+    <h2>Global Academy Of<br>Technology</h2>
+  </div>
+
+  <div class="contact-info-grid">
+    <div class="contact-col">
+      <h4>📍 Location</h4>
+      <p>Adithya Layout, Rajarajeshwari Nagar,<br>Bengaluru, Karnataka 560098</p>
+    </div>
+    <div class="contact-col">
+      <h4>📞 Phone No.</h4>
+      <p>For General Enquiries:<br>080-28603158/57</p>
+      <p style="margin-top:8px">Admission:<br>+91 80500-03067<br>+91-92431-90105</p>
+    </div>
+    <div class="contact-col">
+      <h4>✉️ Email</h4>
+      <p>Admission Email ID</p>
+      <a href="mailto:info@gat.ac.in">info@gat.ac.in</a>
+      <a href="mailto:admissions@gat.ac.in">admissions@gat.ac.in</a>
+    </div>
+  </div>
+
+  <div class="section section-center" style="background:var(--gray)">
+    <h2 style="font-size:36px;font-weight:400;margin-bottom:32px">Your vision, our<br><strong>innovation</strong></h2>
+    <div style="max-width:640px;margin:0 auto">
+      <textarea placeholder="Write Your Message………" style="width:100%;min-height:100px;padding:16px;border:1.5px solid #ccc;border-radius:4px;font-family:inherit;font-size:14px;resize:vertical;"></textarea>
+      <button style="margin-top:12px;background:var(--yellow);border:none;padding:13px 28px;font-size:14px;font-weight:700;cursor:pointer;border-radius:4px;">Send Now</button>
+    </div>
+  </div>
+
+</div><!-- /contact -->
+
+<!-- ══════════════════ ATTENDANCE PORTAL ══════════════════ -->
+<div class="page" id="page-attendance">
+  <div class="hero" style="height:260px;">
+    <div class="hero-text"><h1>📋 Attendance <span>Portal</span></h1></div>
+    <div class="hero-cet-bar">Enter your Student ID to view your attendance record</div>
+  </div>
+
+  <!-- LOGIN SCREEN -->
+  <div id="att-login-screen">
+    <div class="att-login-wrap">
+      <div class="att-card-3d">
+        <div class="att-card-inner">
+          <div class="att-logo-top">
+            <div class="logo-badge" style="width:44px;height:44px;margin:0 auto 10px;">
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px">
+                <circle cx="16" cy="16" r="12" fill="none" stroke="#FFD600" stroke-width="2"/>
+                <ellipse cx="16" cy="16" rx="6" ry="12" fill="none" stroke="#FFD600" stroke-width="1.5"/>
+                <line x1="4" y1="16" x2="28" y2="16" stroke="#FFD600" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div style="font-size:13px;font-weight:800;color:var(--navy);line-height:1.3">GLOBAL ACADEMY<br>OF TECHNOLOGY</div>
+          </div>
+          <h2 class="att-card-title">Student Login</h2>
+          <p class="att-card-sub">Enter your unique Student ID to access your attendance dashboard</p>
+          <div class="att-input-group">
+            <label>Student ID</label>
+            <input type="text" id="att-student-id" placeholder="e.g. GAT2024001" maxlength="12" />
+          </div>
+          <div id="att-login-error" class="att-error-msg"></div>
+          <button class="att-login-btn" onclick="attendanceLogin()">
+            <span>View Attendance</span><span style="font-size:18px">→</span>
+          </button>
+          <div class="att-hint"><span>🔒 Secure Student Access</span></div>
+        </div>
+      </div>
+      <div class="att-particle p1"></div>
+      <div class="att-particle p2"></div>
+      <div class="att-particle p3"></div>
+      <div class="att-particle p4"></div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD SCREEN -->
+  <div id="att-dashboard-screen" style="display:none;">
+    <div class="att-dash-header">
+      <div>
+        <h2 id="att-dash-name" style="font-size:22px;font-weight:800;color:var(--white)"></h2>
+        <p id="att-dash-info" style="font-size:14px;color:rgba(255,255,255,.6);margin-top:4px"></p>
+      </div>
+      <button class="att-back-btn" onclick="attendanceLogout()">← Back</button>
+    </div>
+    <div class="att-dashboard-body">
+      <!-- Semicircle Gauge -->
+      <div class="att-overall-panel">
+        <h3 class="att-panel-title">Overall Attendance</h3>
+        <div class="att-gauge-wrap">
+          <svg class="att-gauge-svg" viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 20 115 A 90 90 0 0 1 200 115" fill="none" stroke="#e8f4f4" stroke-width="18" stroke-linecap="round"/>
+            <path id="att-gauge-arc" d="M 20 115 A 90 90 0 0 1 200 115" fill="none" stroke="#5BC8C5" stroke-width="18" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283"/>
+            <text x="15" y="128" font-size="9" fill="#999" font-family="DM Sans">0%</text>
+            <text x="98" y="25" font-size="9" fill="#999" font-family="DM Sans" text-anchor="middle">50%</text>
+            <text x="200" y="128" font-size="9" fill="#999" font-family="DM Sans" text-anchor="end">100%</text>
+            <text id="att-gauge-pct" x="110" y="95" font-size="30" font-weight="900" fill="#1a2340" font-family="DM Sans" text-anchor="middle">0%</text>
+            <text x="110" y="113" font-size="10" fill="#888" font-family="DM Sans" text-anchor="middle">ATTENDANCE</text>
+          </svg>
+          <div id="att-gauge-status" class="att-gauge-badge"></div>
+        </div>
+        <div class="att-overall-stats">
+          <div class="att-ostat"><span id="att-total-present">0</span><small>Classes Present</small></div>
+          <div class="att-ostat"><span id="att-total-held">0</span><small>Classes Held</small></div>
+          <div class="att-ostat"><span id="att-total-absent">0</span><small>Classes Absent</small></div>
+        </div>
+        <div id="att-warning-box" class="att-warning" style="display:none">
+          ⚠️ Low attendance! Minimum 75% required. You need <span id="att-classes-needed">0</span> more classes.
+        </div>
+      </div>
+      <!-- Subject Cards -->
+      <div class="att-subjects-panel">
+        <h3 class="att-panel-title">Subject-wise Attendance</h3>
+        <div class="att-subjects-grid" id="att-subjects-grid"></div>
+      </div>
+    </div>
+  </div>
+</div><!-- /attendance -->
+
+<!-- ══════════════════ ACCESS CONTROL LOGIN ══════════════════ -->
+<div class="page" id="page-access-login">
+  <div class="hero" style="height:260px;">
+    <div class="hero-text"><h1>🔐 Access <span>Control</span> System</h1></div>
+    <div class="hero-cet-bar">Administrator Access Only — Restricted Portal</div>
+  </div>
+  <div class="access-login-wrap">
+    <div class="access-card-3d">
+      <div class="access-card-glow"></div>
+      <div class="access-shield">🛡️</div>
+      <h2 class="access-title">Admin Login</h2>
+      <p class="access-sub">This portal is restricted to authorised administrators only.</p>
+      <div class="att-input-group">
+        <label>Admin ID</label>
+        <input type="text" id="access-admin-id" placeholder="Enter Admin ID" maxlength="6"/>
+      </div>
+      <div class="att-input-group" style="margin-top:14px">
+        <label>Password</label>
+        <input type="password" id="access-admin-pw" placeholder="Enter Password" maxlength="6"/>
+      </div>
+      <div id="access-login-error" class="att-error-msg"></div>
+      <button class="att-login-btn" onclick="accessLogin()" style="margin-top:20px">
+        <span>Login to Admin Panel</span><span style="font-size:18px">→</span>
+      </button>
+      <p style="font-size:12px;color:rgba(255,255,255,.4);text-align:center;margin-top:14px">🔒 All actions are logged and monitored</p>
+      <div class="access-cube c1"></div>
+      <div class="access-cube c2"></div>
+      <div class="access-cube c3"></div>
+    </div>
+  </div>
+</div><!-- /access-login -->
+
+<!-- ══════════════════ ACCESS CONTROL DASHBOARD ══════════════════ -->
+<div class="page" id="page-access-dashboard">
+  <div class="faculty-hero" style="padding:20px 56px;display:flex;align-items:center;justify-content:space-between;">
+    <h2>🔐 ACCESS CONTROL — ADMIN PANEL</h2>
+    <button onclick="showPage('access-login')" style="background:var(--navy);color:var(--yellow);border:none;padding:10px 22px;border-radius:4px;font-weight:700;cursor:pointer;font-size:13px;">Logout</button>
+  </div>
+  <div class="section">
+    <div class="ac-tabs">
+      <button class="ac-tab active" onclick="acTab('students', this)">👩‍🎓 Manage Students</button>
+      <button class="ac-tab" onclick="acTab('attendance', this)">📋 Edit Attendance</button>
+      <button class="ac-tab" onclick="acTab('add', this)">➕ Add Student</button>
+    </div>
+    <!-- Manage Students -->
+    <div id="ac-tab-students" class="ac-tab-content active">
+      <div class="ac-search-bar">
+        <input type="text" id="ac-search" placeholder="🔍  Search by name or ID..." oninput="renderStudentTable()" />
+        <button class="btn-yellow" onclick="renderStudentTable()">Search</button>
+      </div>
+      <div class="ac-table-wrap">
+        <table class="ac-table" id="ac-student-table">
+          <thead><tr><th>Student ID</th><th>Name</th><th>Dept</th><th>Semester</th><th>Overall %</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody id="ac-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Edit Attendance -->
+    <div id="ac-tab-attendance" class="ac-tab-content">
+      <div class="ac-att-editor">
+        <div class="att-input-group">
+          <label>Select Student</label>
+          <select id="ac-att-student-select" onchange="loadStudentForEdit()">
+            <option value="">-- Choose a Student --</option>
+          </select>
+        </div>
+        <div id="ac-att-subject-editor" style="display:none;margin-top:24px">
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:var(--navy)">Edit Subject-wise Attendance</h3>
+          <div id="ac-att-subjects-form" class="ac-subjects-form"></div>
+          <button class="att-login-btn" style="max-width:220px;margin-top:20px" onclick="saveAttendanceEdit()">
+            <span>Save Changes</span><span>✓</span>
+          </button>
+          <div id="ac-save-msg" style="font-size:13px;font-weight:600;margin-top:10px;min-height:18px"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Student -->
+    <div id="ac-tab-add" class="ac-tab-content">
+      <div class="ac-add-form">
+        <h3 style="font-size:18px;font-weight:800;color:var(--navy);margin-bottom:20px">Add New Student</h3>
+        <div class="ac-form-grid">
+          <div class="att-input-group"><label>Student ID *</label><input type="text" id="new-id" placeholder="e.g. GAT2024010"/></div>
+          <div class="att-input-group"><label>Full Name *</label><input type="text" id="new-name" placeholder="e.g. Rahul Sharma"/></div>
+          <div class="att-input-group"><label>Department *</label>
+            <select id="new-dept"><option>CSE (AI-ML)</option><option>CSE</option><option>ECE</option><option>ISE</option><option>ME</option><option>Civil</option></select>
+          </div>
+          <div class="att-input-group"><label>Semester *</label>
+            <select id="new-sem"><option>1st</option><option>2nd</option><option>3rd</option><option>4th</option><option>5th</option><option>6th</option><option>7th</option><option>8th</option></select>
+          </div>
+        </div>
+        <div id="add-student-error" style="font-size:13px;font-weight:600;margin-top:10px;min-height:18px"></div>
+        <button class="att-login-btn" style="max-width:220px;margin-top:20px" onclick="addNewStudent()">
+          <span>Add Student</span><span>➕</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div><!-- /access-dashboard -->
+
+<!-- ══════════════════ LIBRARY ══════════════════ -->
+<div class="page" id="page-library">
+  <div class="hero" style="height:260px;">
+    <div class="hero-text"><h1>📚 Library <span>Management</span></h1></div>
+    <div class="hero-cet-bar">GAT Digital Library — Search, Reserve & Borrow Books Online</div>
+  </div>
+  <div class="section">
+    <div class="lib-search-bar">
+      <input type="text" class="lib-search-input" placeholder="🔍  Search by title, author or subject..." id="lib-search" oninput="filterBooks()"/>
+    </div>
+    <div class="lib-stats-row">
+      <div class="lib-stat"><span>4,820</span><small>Total Books</small></div>
+      <div class="lib-stat"><span>1,240</span><small>Available Now</small></div>
+      <div class="lib-stat"><span>380</span><small>E-Books</small></div>
+      <div class="lib-stat"><span>12</span><small>Due Today</small></div>
+    </div>
+    <div class="lib-books-grid" id="lib-books-grid"></div>
+  </div>
+  <div class="quote-section" style="padding:36px 56px;">
+    <div class="quote-text">
+      <blockquote>"A library is not a luxury but one of the necessities of life."</blockquote>
+      <div class="attr">GAT Library — Open Mon–Sat, 8 AM – 8 PM</div>
+    </div>
+    <div style="font-size:64px">📖</div>
+  </div>
+</div><!-- /library -->
+
+<!-- ══════════════════ CANTEEN ══════════════════ -->
+<div class="page" id="page-canteen">
+  <div class="hero" style="height:260px;">
+    <div class="hero-text"><h1>🍽️ Canteen <span>Pre-Order</span></h1></div>
+    <div class="hero-cet-bar">Skip the Queue — Pre-Order Your Meal in Minutes</div>
+  </div>
+  <div class="section">
+    <div class="canteen-grid" id="canteen-grid"></div>
+    <div class="canteen-cart-bar" id="canteen-cart-bar" style="display:none">
+      <span id="canteen-cart-label">0 items</span>
+      <span id="canteen-cart-total">₹0</span>
+      <button class="btn-yellow" onclick="placeOrder()">Place Order ✓</button>
+    </div>
+    <div id="canteen-order-msg" style="font-size:15px;color:#1a7a3e;font-weight:600;margin-top:16px;display:none">
+      ✅ Order placed! Your meal will be ready in 15 minutes. Token: <strong id="canteen-token"></strong>
+    </div>
+  </div>
+</div><!-- /canteen -->
+
+<!-- ══════════════════ AI ASSISTANT ══════════════════ -->
+<div class="page" id="page-ai-assistant">
+  <div class="hero" style="height:260px;">
+    <div class="hero-text"><h1>🤖 AI Study <span>Assistant</span></h1></div>
+    <div class="hero-cet-bar">Powered by Claude AI — Your 24/7 Academic Companion</div>
+  </div>
+  <div class="section">
+    <div class="ai-chat-wrap">
+      <div class="ai-chat-box" id="ai-chat-box">
+        <div class="ai-msg ai">
+          <div class="ai-avatar">🤖</div>
+          <div class="ai-bubble">Hello! I'm your GAT AI Study Assistant. Ask me anything about your syllabus, concepts, or past papers. How can I help you today?</div>
+        </div>
+      </div>
+      <div class="ai-input-row">
+        <input type="text" id="ai-input" placeholder="Ask me anything… e.g. Explain Big O notation" onkeydown="if(event.key==='Enter') aiSend()"/>
+        <button class="btn-teal" onclick="aiSend()">Send →</button>
+      </div>
+      <div class="ai-quick-btns">
+        <button onclick="aiQuick('Explain Machine Learning in simple terms')">Machine Learning Basics</button>
+        <button onclick="aiQuick('What is the difference between supervised and unsupervised learning?')">Supervised vs Unsupervised</button>
+        <button onclick="aiQuick('Explain DBMS normalization with examples')">DBMS Normalization</button>
+        <button onclick="aiQuick('What are the key topics in Data Structures?')">Data Structures Topics</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /ai-assistant -->
+
+<!-- ══════════════════ DIGITAL ID ══════════════════ -->
+<div class="page" id="page-digital-id">
+  <div class="hero" style="height:260px;">
+    <div class="hero-text"><h1>🪪 Digital <span>ID Card</span></h1></div>
+    <div class="hero-cet-bar">Your Virtual Identity — Valid across all GAT Campus Facilities</div>
+  </div>
+  <div class="section section-center">
+    <div class="did-lookup">
+      <div class="att-input-group" style="max-width:340px;margin:0 auto 16px">
+        <label>Enter Student ID to generate ID Card</label>
+        <input type="text" id="did-input" placeholder="e.g. GAT2024001"/>
+      </div>
+      <button class="att-login-btn" style="max-width:220px;margin:0 auto" onclick="generateID()">
+        <span>Generate ID Card</span><span>🪪</span>
+      </button>
+    </div>
+    <div id="did-card-wrap" style="display:none;margin-top:40px">
+      <div class="did-card">
+        <div class="did-card-top">
+          <div class="did-logo-row">
+            <div class="logo-badge" style="width:38px;height:38px;flex-shrink:0">
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px">
+                <circle cx="16" cy="16" r="12" fill="none" stroke="#FFD600" stroke-width="2"/>
+                <ellipse cx="16" cy="16" rx="6" ry="12" fill="none" stroke="#FFD600" stroke-width="1.5"/>
+                <line x1="4" y1="16" x2="28" y2="16" stroke="#FFD600" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div style="text-align:left;line-height:1.3">
+              <div style="font-size:11px;font-weight:800;color:var(--white)">GLOBAL ACADEMY OF TECHNOLOGY</div>
+              <div style="font-size:9px;color:rgba(255,255,255,.7)">Autonomous • Affiliated to VTU</div>
+            </div>
+          </div>
+          <div style="font-size:10px;color:var(--yellow);font-weight:700;letter-spacing:1px">STUDENT ID CARD</div>
+        </div>
+        <div class="did-card-body">
+          <div class="did-avatar">👤</div>
+          <div class="did-info">
+            <div class="did-field"><small>Name</small><strong id="did-name">—</strong></div>
+            <div class="did-field"><small>Student ID</small><strong id="did-sid">—</strong></div>
+            <div class="did-field"><small>Department</small><strong id="did-dept">—</strong></div>
+            <div class="did-field"><small>Semester</small><strong id="did-sem">—</strong></div>
+          </div>
+          <div class="did-qr">
+            <div class="did-qr-box"><div class="qr-inner"></div></div>
+            <small style="font-size:9px;color:var(--muted)">Scan QR</small>
+          </div>
+        </div>
+        <div class="did-card-footer">
+          <span>Valid: 2024–2028</span>
+          <span style="font-size:10px;color:var(--yellow)">● Active</span>
+        </div>
+      </div>
+    </div>
+    <div id="did-error" style="font-size:13px;color:#d32f2f;font-weight:600;margin-top:16px"></div>
+  </div>
+</div><!-- /digital-id -->
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-brand">
+    <div class="footer-logo-row">
+      <div class="logo-badge" style="width:44px;height:44px;">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px">
+          <circle cx="16" cy="16" r="12" fill="none" stroke="#FFD600" stroke-width="2"/>
+          <ellipse cx="16" cy="16" rx="6" ry="12" fill="none" stroke="#FFD600" stroke-width="1.5"/>
+          <line x1="4" y1="16" x2="28" y2="16" stroke="#FFD600" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="logo-text" style="font-size:11px">GLOBAL ACADEMY<br>OF TECHNOLOGY</div>
+    </div>
+    <div class="tagline">Your Future Starts Here</div>
+    <div class="footer-section">
+      <h4>Get in Touch</h4>
+      <p>Adithya Layout, Rajarajeshwari Nagar<br>Bengaluru, Karnataka 560098</p>
+      <p style="margin-top:8px">For General Enquiries: 080-28603158/57</p>
+      <p>info@gat.ac.in</p>
+      <p>admissions@gat.ac.in</p>
+    </div>
+  </div>
+
+  <div class="footer-section">
+    <h4>About GAT</h4>
+    <a href="#">Vision &amp; Mission</a>
+    <a href="#">Admissions</a>
+    <a href="#">Placements</a>
+    <a href="#">Research</a>
+    <a href="#">Mandatory Disclosures</a>
+    <a href="#">FAQs</a>
+  </div>
+
+  <div class="footer-section">
+    <h4>Socials</h4>
+    <div class="social-row">
+      <a href="#" class="social-btn ig">📸</a>
+      <a href="#" class="social-btn fb">f</a>
+      <a href="#" class="social-btn li">in</a>
+      <a href="#" class="social-btn yt">▶</a>
+    </div>
+    <div style="margin-top:32px">
+      <h4>Smart Campus</h4>
+      <a href="#" onclick="showPage('modules');return false;">All Modules</a>
+      <a href="#" onclick="showPage('about');return false;">About the System</a>
+      <a href="#" onclick="showPage('contact');return false;">Support</a>
+    </div>
+  </div>
+</footer>
+<div class="footer-copy">@GAT, 2025</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
